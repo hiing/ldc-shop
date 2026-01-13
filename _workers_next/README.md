@@ -1,13 +1,13 @@
 # LDC Shop (Cloudflare Workers Edition)
 
 
-基于 **Next.js 16**、**Cloudflare Workers** (OpenNext)、**D1 Database** 和 **Shadcn UI** 构建的无服务器虚拟商品商店。
+基于 **Next.js 15**、**Cloudflare Workers** (OpenNext)、**D1 Database** 和 **Shadcn UI** 构建的无服务器虚拟商品商店。
 
 ## 🛠 技术架构 (Technical Architecture)
 
 本版本采用 **Next.js on Workers** 的前沿技术路线，而非传统的单文件 Worker：
 
-*   **核心框架**: **Next.js 16 (App Router)** - 保持与 Vercel 版本一致的现代化开发体验。
+*   **核心框架**: **Next.js 15 (App Router)** - 保持与 Vercel 版本一致的现代化开发体验。
 *   **适配器**: **OpenNext (Cloudflare Adapter)** - 目前最先进的 Next.js 到 Workers 的转换方案，支持大部分 Next.js 特性。
 *   **数据库**: **Cloudflare D1 (SQLite)** - 边缘原生关系型数据库，替代 Vercel Postgres。
 *   **ORM**: **Drizzle ORM** - 完美适配 D1，提供类型安全的 SQL 操作。
@@ -123,7 +123,7 @@
 ## ⚙️ 环境变量说明
 
 | 变量名 | 说明 |
-|Ref | Ref Description|
+|---|---|
 | `OAUTH_CLIENT_ID` | Linux DO Connect Client ID |
 | `OAUTH_CLIENT_SECRET` | Linux DO Connect Client Secret |
 | `MERCHANT_ID` | EPay 商户 ID |
