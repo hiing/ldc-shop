@@ -144,7 +144,7 @@ export function BuyContent({
                                         variant={stockCount > 0 ? "outline" : "destructive"}
                                         className={stockCount > 0 ? "border-primary/30 text-primary" : ""}
                                     >
-                                        {stockCount >= 999999 ? t('common.unlimited') : (stockCount > 0 ? `${t('common.stock')}: ${stockCount}` : t('common.outOfStock'))}
+                                        {stockCount >= 999999 ? `${t('common.stock')}: ${t('common.unlimited')}` : (stockCount > 0 ? `${t('common.stock')}: ${stockCount}` : t('common.outOfStock'))}
                                     </Badge>
                                     {typeof product.purchaseLimit === 'number' && product.purchaseLimit > 0 && (
                                         <Badge variant="secondary" className="mt-2">
