@@ -1,6 +1,6 @@
 {
-    "name": "ldc-shop-next",
-    "main": "worker-entry.mjs",
+    "name": "ldc-shop",
+    "main": ".open-next/worker.js",
     "keep_names": true,
     "compatibility_date": "2025-11-12",
     "compatibility_flags": [
@@ -10,17 +10,13 @@
         "directory": ".open-next/assets",
         "binding": "ASSETS"
     },
-    "d1_databases": [
+   "d1_databases": [
         {
             "binding": "DB",
-            "database_name": "ldc-shop-next"
+            "database_name": "ldc-shop-db",
+            "database_id": "6a68f55a-c2bb-4558-b4c8-d865b548d268"
         }
-    ],
-    "triggers": {
-        "crons": [
-            "* * * * *"
-        ]
-    },
+    ], 
     "observability": {
         "enabled": true
     }
